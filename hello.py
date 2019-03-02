@@ -27,6 +27,35 @@ GAME_FONT = pygame.font.SysFont(None, 30)
 
 clock = pygame.time.Clock()
 
+def text_render(mx,my):
+        if 400<=mx<=550 and 310<=my<=610:#door
+                text = GAME_FONT.render("Hello there, welcome to ERS!", False, (255, 255, 255))
+                #while countdown(20) != True:
+                screen.blit(text, (215, 122))
+                pygame.display.update() 
+        elif 850<=mx<=1270 and 570<=my<=680:#bed
+                text = GAME_FONT.render("This bed reminds me of something, but I can't quite put my finger on it.", False, (255, 255, 255))
+                #while countdown(20) != True:
+                screen.blit(text, (215, 122))
+                pygame.display.update() 
+        elif 610<=mx<=640 and 350<=my<=410:#key
+                text = GAME_FONT.render("FFRREEEEDOM!", False, (255, 255, 255))
+                #while countdown(20) != True:
+                screen.blit(text, (215, 122))
+                pygame.display.update() 
+        elif 0<=mx<=1400 and 0<=my<=115:#ceiling
+                text = GAME_FONT.render("That's weird, there are no lights in this room.", False, (255, 255, 255))
+                #while countdown(20) != True:
+                screen.blit(text, (215, 122))
+                pygame.display.update() 
+        else: pass
+
+def countdown(n):
+        while n > 0:
+                n = n - 1
+        if n == 0:
+                return True
+
 while not done:
 
         screen.fill((0, 0, 0))
@@ -83,10 +112,7 @@ while not done:
                         is_blue = not is_blue
                 if event.type == pygame.MOUSEBUTTONDOWN:
                         mx, my = pygame.mouse.get_pos()
-                        if 400<=mx<=550 and 310<=my<=610:
-                                text_surface = GAME_FONT.render("Hello", False, (255, 255, 255))
-                                screen.blit(text_surface, (50, 50))
-                        else: pass
+                        text_render(mx,my)
         
         pygame.display.flip()
         clock.tick(60)
