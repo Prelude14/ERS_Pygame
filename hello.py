@@ -27,34 +27,70 @@ GAME_FONT = pygame.font.SysFont(None, 30)
 
 clock = pygame.time.Clock()
 
-def text_render(mx,my):
-        if 400<=mx<=550 and 310<=my<=610:#door
-                text = GAME_FONT.render("Hello there, welcome to ERS!", False, (255, 255, 255))
-                #while countdown(20) != True:
-                screen.blit(text, (215, 122))
-                pygame.display.update() 
-        elif 850<=mx<=1270 and 570<=my<=680:#bed
-                text = GAME_FONT.render("This bed reminds me of something, but I can't quite put my finger on it.", False, (255, 255, 255))
-                #while countdown(20) != True:
-                screen.blit(text, (215, 122))
-                pygame.display.update() 
-        elif 610<=mx<=640 and 350<=my<=410:#key
-                text = GAME_FONT.render("FFRREEEEDOM!", False, (255, 255, 255))
-                #while countdown(20) != True:
-                screen.blit(text, (215, 122))
-                pygame.display.update() 
-        elif 0<=mx<=1400 and 0<=my<=115:#ceiling
-                text = GAME_FONT.render("That's weird, there are no lights in this room.", False, (255, 255, 255))
-                #while countdown(20) != True:
-                screen.blit(text, (215, 122))
-                pygame.display.update() 
-        else: pass
+press_dict = {'bed': {'mx_min': 850, 'mx_max': 1270, 'my_min': 570, 'my_max': 680,
+                      'text': GAME_FONT.render("This bed reminds me of something, but I can't quite put my finger on it.", False, (255, 255, 255))},
+                'door': {'mx_min': 400, 'mx_max': 550, 'my_min': 310, 'my_max': 610,
+                      'text': GAME_FONT.render("This door is locked.", False, (255, 255, 255))},
+                'key': {'mx_min': 610, 'mx_max': 640, 'my_min': 350, 'my_max': 410,
+                      'text': GAME_FONT.render("FRREEEEEDDOOOM!!!!", False, (255, 255, 255))},
+                'ceiling': {'mx_min': 0, 'mx_max': 1400, 'my_min': 0, 'my_max': 115,
+                      'text': GAME_FONT.render("That's weird, there are no lights in this room.", False, (255, 255, 255))}
+}
+             
 
-def countdown(n):
-        while n > 0:
-                n = n - 1
-        if n == 0:
-                return True
+# This text render queue will hold a dict with the text object to be displayed
+# as well as the number of game ticks it will be displayed
+text_render_queue = {}
+
+def button_press(mx,my,text_render_queue,press_dict=press_dict):
+        """Function that checks coords of mouse click against dictionary
+        of known events and then adds them to the render queue
+        
+        modifies press_dict"""
+
+        for key in press_dict:
+                if press_dict[key]['mx_min']<=mx<=press_dict[key]['mx_max'] and press_dict[key]['my_min']<=my<=press_dict[key]['my_max']:
+                        #print('caught the button press {}'.format(key))
+                        text_render_queue[key] = {'text':press_dict[key]['text'],
+                                                  'ticks':50,
+                                                  # we could add more properties either constant
+                                                  # or specific to interaction
+                                                  }
+
+# This contains the actions and locations for all interaction related to clicking
+# Will likely need better key names, or unique keys. This might also all be
+# better done using object, but I will let you decide.
+# press_dict contains dictionaires of the expected format:
+# {'mx_min': ,
+#  'mx_max': ,
+#  'my_min': ,
+#  'my_max': ,
+#  'text': ,
+#  #'ticks':200, # this could also be specified specifically for each interaction
+# }
+
+
+def render_text(text_render_queue):
+        del_list = []
+        for key in text_render_queue:
+                if text_render_queue[key]['ticks'] >= 0:
+                        # render text to screen
+                        screen.blit(text_render_queue[key]['text'],
+                                    (110,10) )
+                        # decrease the number of ticks left
+                        text_render_queue[key]['ticks'] -= 1
+                        # This seems redundant, I suspect we can
+                        # move it outside the for-loop
+                        pygame.display.update() 
+                else:
+                        # Remove that entry from the queue
+                        # text_render_queue.pop(key)
+                        # This doesn't actually work, Error:
+                        # RuntimeError: dictionary changed size during iteration
+                        del_list.append(key)
+        ## cleanup
+        # Use list comprehension to loop fast
+        [text_render_queue.pop(key) for key in del_list]
 
 while not done:
 
@@ -112,7 +148,12 @@ while not done:
                         is_blue = not is_blue
                 if event.type == pygame.MOUSEBUTTONDOWN:
                         mx, my = pygame.mouse.get_pos()
-                        text_render(mx,my)
+                        button_press(mx,my,text_render_queue)
+                        
+        
+        # render text in the queue
+        render_text(text_render_queue)
+        print('text_render_queue:',text_render_queue)
         
         pygame.display.flip()
         clock.tick(60)
