@@ -819,7 +819,7 @@ while Outro2 and done == True:
         if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
             pygame.quit()
             quit()
-            
+             
 
     pygame.display.flip()
     clock.tick(60)
