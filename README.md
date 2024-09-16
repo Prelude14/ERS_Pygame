@@ -20,10 +20,6 @@ Here are the main components:
     
     * All image files that each level and menu uses, see credits below for specific images and their information.
 
-  * **leftover** (https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/leftover):
-    
-    * Extra images for a secret purpose. See credits below for more specific information.
-
 * ### Old Protype Files (the original repository wasn't made with perfect standards in mind, so in and effort to clean it up, I've put the older, extra files into this folder)
   * **Old Prototypes folder** (https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/ers.py):
     * *ers.v1.py* (first version of complete main menu, first level and outro -- NO second level)
@@ -42,7 +38,7 @@ Here are the main components:
 ## Technologies Used
 
 - **Game:** Pygame, Python, Visual Studio
-- **Art:** Photoshop, Piskel, Audacity
+- **Art:** Photoshop, Piskel, MS Paint, Audacity
 
 ## Developer Setup Instructions
 
@@ -76,7 +72,7 @@ Here are the main components:
 
 ### What I would do differently now (2024): 
 
-* I would definitely fix the Main menu's button hover issues.
+* I would fix the Main menu's button hover issues.
 
 * I never got around to changing the electronic colour pad's buzzer noise (from lvl 2) to change when the code is entered correctly. So it makes the same buzz whether you get it wrong or right
   currently, and I definitely would change that up.
@@ -110,12 +106,11 @@ Here are the main components:
         https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/imgs/mainmenu
 
         2. Level 1 only uses a few images (the key sprites and the redacted thing), and they were made by
-           me, using Photoshop and Piskel (see https://www.piskelapp.com/terms for Piskel's policy
-           regarding copyright), everything else is drawn using pygame's "draw" feature.
+           me, using Piskel (see https://www.piskelapp.com/terms for Piskel's policy
+           regarding copyright) or MS Paint, everything else is drawn using pygame's "draw" feature.
   
         Find these images here:
         https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/imgs/lvl1
-        https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/leftover/redacted.png
   
         3. Level 2 has a lot more images, but they were all made by me using Photoshop and Piskel (see
            https://www.piskelapp.com/terms for Piskel's policy regarding copyright), or they have been replaced by
@@ -174,9 +169,8 @@ Here are the main components:
            bclose.wav: "Closing Book A1 Sound Effect"
                      https://www.fesliyanstudios.com/royalty-free-sound-effects-download/book-238  (Num 1)
            buzz.wav: "Wrong Buzzer", created by Alexander
-                     The sound effect is permitted for commercial use under license Creative Commons License 4.0
-                     (https://creativecommons.org/licenses/by/4.0/), and unmodified.
-                     Source: https://orangefreesounds.com/wrong-buzzer/
+                     Available for use under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/),
+                     and unmodified. Source: https://orangefreesounds.com/wrong-buzzer/
   
         Find these sounds here:
         https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/audio/lvl2
