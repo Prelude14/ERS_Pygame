@@ -91,25 +91,27 @@ Here are the main components:
 
 * Lastly, I would make more levels (at least 3, but maybe 5). I had just under a full semester (about 3 months) to make this and I had to teach myself pygame's features since everyone else in
   the class were doing their own specific topic for their projects (some did cyber security or app development as examples). Level one took the longest to make since I was learning the most
-  during its development, and definitely could have done things in much better ways. I also ran into a couple week roadblock due to an issue with how the text is displayed in level one when
-  certain things are clicked, that my professor also struggled to help with for a bit. I don't regret the time spent on level one or that roadblock though, since they were valuable learning
-  experiences that changed how I approached coding in general, but also how I approached making level 2. I still put a lot of time into making the images for each part of level 2, but I
-  think I had found my groove by the end of the semester and could have made more if I had another month or two.
+  during its development, and definitely could have done things in much better ways. I also ran into a couple week roadblock, due to an issue with how the text is displayed in level one when
+  certain things are clicked, and my professor also struggled to help with it for a bit. I don't regret the time spent on level one or that roadblock though, since they were valuable learning
+  experiences that changed how I approached coding problems in general (For example, I learned how important patience can be, but also that I shouldn't be afraid of trying new ideas and
+  changing my approach to a puzzle if needed). It also impacted how I approached making level 2, I ended up ditching the text feature and the level plays a lot different because of it.
+  I still put a lot of time into making the images for each part of level 2, but I think I had found my groove by the end of the semester and could have made more if I had another month or two.
 
 
 ## Credits:
 
 * #### Images
      
-        1. All the Main Menu and Countdown images (the logo, buttons, lock sprites, and countdown slides) were made by me
-           using Photoshop and Piskel (see https://www.piskelapp.com/terms for Piskel's policy regarding copyright).
+        1. All the Main Menu and Countdown images (the logo, buttons, lock sprites, and countdown slides)
+           were made by me, using Photoshop and Piskel (see https://www.piskelapp.com/terms for Piskel's
+           policy regarding copyright).
   
         Find these images here:
         https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/imgs/mainmenu
 
-        2. Level 1 only uses a few images (the key sprites and the redacted thing), and they were made by me using
-           Photoshop and Piskel (see https://www.piskelapp.com/terms for Piskel's policy regarding copyright),
-           everything else is drawn using pygame's "draw" feature.
+        2. Level 1 only uses a few images (the key sprites and the redacted thing), and they were made by
+           me, using Photoshop and Piskel (see https://www.piskelapp.com/terms for Piskel's policy
+           regarding copyright), everything else is drawn using pygame's "draw" feature.
   
         Find these images here:
         https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/imgs/lvl1
@@ -125,57 +127,62 @@ Here are the main components:
 * #### Sounds https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/audio
   
         1. Main Menu Sounds: 
-           beep1.wav and beep2.wav: Film Projector Countdown Copyright 2013 Iwan Gabovitch, CC-BY3 license.
+           beep1.wav and beep2.wav: "Film Projector Countdown" by Iwan Gabovitch, Copyright 2013, CC-BY3 license:
+           (https://creativecommons.org/licenses/by/3.0/). Modified into two shorter files.
            https://freesound.org/people/qubodup/sounds/182109/
   
-           but.wav: Chain Rustling 3 Sound Effect
+           but.wav: "Chain Rustling 3 Sound Effect"
            https://www.fesliyanstudios.com/royalty-free-sound-effects-download/chain-44 (Num 3)
   
         Find these sounds here:
         https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/audio/mainmenu
 
         2. Level One Sounds:
-           keys.wav: Picking Up Keys From Floor 2 Sound Effect
+           keys.wav: "Picking Up Keys From Floor 2 Sound Effect"
                      https://www.fesliyanstudios.com/sound-effects-search.php?q=keys  (Num 16)
-           doorc.wav: Closing Squeaky Door B1 Sound Effect
+           doorc.wav: "Closing Squeaky Door B1 Sound Effect"
                      https://www.fesliyanstudios.com/sound-effects-search.php?q=close+door  (Num 22)
-           secretn.wav: Slow Hard Breathing Sound Effect
+           secretn.wav: "Slow Hard Breathing Sound Effect"
                      https://www.fesliyanstudios.com/royalty-free-sound-effects-download/breathing-150  (Num 4)
-           secretn2.wav: Screaming Rat Sound Effect
+           secretn2.wav: "Screaming Rat Sound Effect"
                      https://www.fesliyanstudios.com/sound-effects-search.php?q=scream  (Num 13)
-           doorh.wav: Trying To Open Door Handle 1 Sound Effect
+           doorh.wav: "Trying To Open Door Handle 1 Sound Effect"
                      https://www.fesliyanstudios.com/royalty-free-sound-effects-download/door-lock-91  (Num 4)
-           unlock.wav: Heavy Door Lock Locking 1 Sound Effect
+           unlock.wav: "Heavy Door Lock Locking 1 Sound Effect"
                      https://www.fesliyanstudios.com/royalty-free-sound-effects-download/door-lock-91  (Num 1)
   
         Find these sounds here:
         https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/audio/lvl1
 
         3. Level Two Sounds:
-           medgears.wav: Cranking Gears Medium Sound Effect
+           melo.wav: "Last Resort" by Philipp Weigl (https://freemusicarchive.org/music/philipp-weigl/).
+                     Available for use under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+                     Modified into a 24 second snippet and slowed down. Source: Free Music Archive
+                     (https://freemusicarchive.org/music/philipp-weigl/piano-compositions/last-resort/)
+           medgears.wav: "Cranking Gears Medium Sound Effect"
                      https://www.fesliyanstudios.com/sound-effects-search.php?q=gears  (Num 3)
-           fastgears.wav: Cranking Gear Faster Sound Effect
+           fastgears.wav: "Cranking Gear Faster Sound Effect"
                      https://www.fesliyanstudios.com/sound-effects-search.php?q=gears  (Num 1)
-           startup.wav: Computer Beep Beeping 2 Sound Effect
+           startup.wav: "Computer Beep Beeping 2 Sound Effect"
                      https://www.fesliyanstudios.com/sound-effects-search.php?q=beeping  (Num 3)
-           click.wav: Putting Cap Back Onto Marker Sound Effect
+           click.wav: "Putting Cap Back Onto Marker Sound Effect"
                      https://www.fesliyanstudios.com/royalty-free-sound-effects-download/open-close-marker-cap-105  (Num 1)
-           switch.wav: Light Switch On Off 04 Sound Effect
+           switch.wav: "Light Switch On Off 04 Sound Effect"
                      https://www.fesliyanstudios.com/sound-effects-search.php?q=switch  (Num 5)
-           bopen.wav: Turning Paper Book Page Quick A1 Sound Effect
+           bopen.wav: "Turning Paper Book Page Quick A1 Sound Effect"
                      https://www.fesliyanstudios.com/royalty-free-sound-effects-download/book-238  (Num 22)
-           bclose.wav: Closing Book A1 Sound Effect
+           bclose.wav: "Closing Book A1 Sound Effect"
                      https://www.fesliyanstudios.com/royalty-free-sound-effects-download/book-238  (Num 1)
-           buzz.wav: Wrong Buzzer, created by Alexander
+           buzz.wav: "Wrong Buzzer", created by Alexander
                      The sound effect is permitted for commercial use under license Creative Commons License 4.0
-                     https://creativecommons.org/licenses/by/4.0/
-                     https://orangefreesounds.com/wrong-buzzer/
+                     (https://creativecommons.org/licenses/by/4.0/), and unmodified.
+                     Source: https://orangefreesounds.com/wrong-buzzer/
   
         Find these sounds here:
         https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/audio/lvl2
 
         4. Additional Sounds:
-           qubodup
+           qubodup (https://freesound.org/people/qubodup/)
 
   * #### For free sound effects from https://www.fesliyanstudios.com, view their policy here: https://www.fesliyanstudios.com/sound-effects-policy
         
