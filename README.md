@@ -1,5 +1,9 @@
 # Escape Room Simulator Pygame Project
 
+<p>
+ <img align="right" src = "assets/imgs/mainmenu/ers.png" height="250"/>
+</p>
+
 ### A very basic point and click puzzle game, built using Pygame (a set of Python modules designed for creating video games)
 
 ERS is a simple, and custom-made puzzle game where players must figure out how to "escape" each level and move onto the next. It is the first game I have ever made, and I built it for the final project of my CPSC 101 class at Selkirk College in 2019. 
@@ -7,33 +11,33 @@ I haven't touched this project or its repository since the end of that class, an
 
 Here are the main components:
 * ### Main Game (this includes both levels, and is the only file that needs to be run)
-  * **ers.py** (found here: https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/ers.py)
+  * **ers.py** (found here: https://github.com/Prelude14/ERS_Pygame/blob/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/ers.py)
 
     * Starts at the main menu, where players can view the "bonus" menu that displays credits, or they can start the game. After starting, players will then have to play through each level on order starting with level 1.
 
 * ### Assets (audio and image assets)
-  * **audio** (https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/audio):
+  * **audio** (https://github.com/Prelude14/ERS_Pygame/tree/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/assets/audio):
     
     * All audio files that each level and menu uses, see credits below for specific sounds and their information.
  
-  * **imgs** (https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/imgs):
+  * **imgs** (https://github.com/Prelude14/ERS_Pygame/tree/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/assets/imgs):
     
     * All image files that each level and menu uses, see credits below for specific images and their information.
 
 * ### Old Protype Files (the original repository wasn't made with perfect standards in mind, so in and effort to clean it up, I've put the older, extra files into this folder)
-  * **Old Prototypes folder** (https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/ers.py):
+  * **Old Prototypes folder** (https://github.com/Prelude14/ERS_Pygame/tree/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/Old%20Prototype%20Files):
     * *ers.v1.py* (first version of complete main menu, first level and outro -- NO second level)
 
-      * https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/ers.v1.py
+      * https://github.com/Prelude14/ERS_Pygame/blob/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/Old%20Prototype%20Files/ers.v1.py
     * *hello.py* (early version of main menu and level one -- NO second level, and NO outro)
 
-      * https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/hello.py
+      * https://github.com/Prelude14/ERS_Pygame/blob/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/Old%20Prototype%20Files/hello.py
     * *manor.py* (made level 2 seperate of the rest of the game at first, before combining it into the main game)
 
-      * https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/manor.py
+      * https://github.com/Prelude14/ERS_Pygame/blob/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/Old%20Prototype%20Files/manor.py
     * *Tests.py* (unfortunately not actual unit tests (I didn't know about them at the time), it's just a file used to build the main menu early in the project's life and never updated past that)
 
-      * https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/Tests.py
+      * https://github.com/Prelude14/ERS_Pygame/blob/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/Old%20Prototype%20Files/Tests.py
 
 ## Technologies Used
 
@@ -96,30 +100,33 @@ Here are the main components:
 
 ## Credits:
 
-* #### Images
+* #### Images:
      
         1. All the Main Menu and Countdown images (the logo, buttons, lock sprites, and countdown slides)
            were made by me, using Photoshop and Piskel (see https://www.piskelapp.com/terms for Piskel's
            policy regarding copyright).
   
-        Find these images here:
-        https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/imgs/mainmenu
+  Find these images here:
+  https://github.com/Prelude14/ERS_Pygame/tree/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/assets/imgs/mainmenu
+  
 
         2. Level 1 only uses a few images (the key sprites and the redacted thing), and they were made by
            me, using Piskel (see https://www.piskelapp.com/terms for Piskel's policy
            regarding copyright) or MS Paint, everything else is drawn using pygame's "draw" feature.
   
-        Find these images here:
-        https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/imgs/lvl1
+  Find these images here:
+  https://github.com/Prelude14/ERS_Pygame/tree/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/assets/imgs/lvl1
+  
   
         3. Level 2 has a lot more images, but they were all made by me using Photoshop and Piskel (see
            https://www.piskelapp.com/terms for Piskel's policy regarding copyright), or they have been replaced by
            pictures I created (I had to remove some memes in the books in order to avoid copyright issues).
 
-        Find these images here:
-        https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/imgs/lvl2
+  Find these images here:
+  https://github.com/Prelude14/ERS_Pygame/tree/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/assets/imgs/lvl2
+  
 
-* #### Sounds https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/audio
+* #### Sounds:
   
         1. Main Menu Sounds: 
            beep1.wav and beep2.wav: "Film Projector Countdown" by Iwan Gabovitch, Copyright 2013, CC-BY3 license:
@@ -129,8 +136,8 @@ Here are the main components:
            but.wav: "Chain Rustling 3 Sound Effect"
            https://www.fesliyanstudios.com/royalty-free-sound-effects-download/chain-44 (Num 3)
   
-        Find these sounds here:
-        https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/audio/mainmenu
+  Find these sounds here:
+  https://github.com/Prelude14/ERS_Pygame/tree/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/assets/audio/mainmenu
 
         2. Level One Sounds:
            keys.wav: "Picking Up Keys From Floor 2 Sound Effect"
@@ -146,8 +153,8 @@ Here are the main components:
            unlock.wav: "Heavy Door Lock Locking 1 Sound Effect"
                      https://www.fesliyanstudios.com/royalty-free-sound-effects-download/door-lock-91  (Num 1)
   
-        Find these sounds here:
-        https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/audio/lvl1
+  Find these sounds here:
+  https://github.com/Prelude14/ERS_Pygame/tree/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/assets/audio/lvl1
 
         3. Level Two Sounds:
            melo.wav: "Last Resort" by Philipp Weigl (https://freemusicarchive.org/music/philipp-weigl/).
@@ -172,8 +179,8 @@ Here are the main components:
                      Available for use under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/),
                      and unmodified. Source: https://orangefreesounds.com/wrong-buzzer/
   
-        Find these sounds here:
-        https://github.com/Prelude14/ERS_Pygame/blob/71d84cfd9245affd767af73c892509f04bd66a1d/audio/lvl2
+  Find these sounds here:
+  https://github.com/Prelude14/ERS_Pygame/tree/c9dc6ab1f6a8b6d1e000c888e29a8135cd876cb9/assets/audio/lvl2
 
         4. Additional Sounds:
            qubodup (https://freesound.org/people/qubodup/)
